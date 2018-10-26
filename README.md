@@ -1,5 +1,5 @@
 ## Guide for the Monero GUI wallet
-
+trigger
 This repository contains the guide for the [Monero GUI Wallet](https://github.com/monero-project/monero-gui/releases).
 This document is meant to be updated continuously and **a new major release will be available whenever Monero publishes a new version of the GUI**.
 &nbsp;

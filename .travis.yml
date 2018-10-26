@@ -6,5 +6,9 @@ before_install:
  - sudo apt-get install -y pandoc
  - sudo apt-get install -y texlive-full
 
+matrix:
+- HOST=pdf
+- HOST=html
+
 script:
-- make html pdf
+- make $HOST

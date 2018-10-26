@@ -1,8 +1,12 @@
 sudo: true
 
+language: minimal
+
 before_install:
  - sudo apt-get install -y pandoc
  - sudo apt-get install -y texlive-full
 
 script:
-- make html pdf
+
+- make html
+- make pdf

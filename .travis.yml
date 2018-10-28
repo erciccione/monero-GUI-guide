@@ -3,8 +3,12 @@ sudo: true
 language: minimal
 
 before_install:
- - sudo apt-get install -y pandoc
- - sudo apt-get install -y texlive-full
+ - sudo apt-get install -y pandoc texlive texlive-xetex
+
+env:
+   matrix:
+      - FORMAT="html"
+      - FORMAT="pdf"
 
 script:
-- make html pdf
+- make $FORMAT
